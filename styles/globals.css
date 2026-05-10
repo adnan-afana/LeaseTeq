@@ -1,0 +1,37 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  @apply bg-dark text-white font-sans;
+}
+
+a {
+  @apply text-primary hover:text-white transition-colors;
+}
+
+button {
+  @apply transition-all duration-300;
+}
+
+.btn-primary {
+  @apply px-6 py-3 bg-primary text-black font-bold rounded-lg hover:bg-white transition-all;
+}
+
+.btn-secondary {
+  @apply px-6 py-3 bg-transparent border border-primary text-primary rounded-lg hover:bg-primary hover:text-black transition-all;
+}
+
+.gradient-text {
+  @apply bg-gradient-to-r from-primary to-cyan-400 bg-clip-text text-transparent;
+}
